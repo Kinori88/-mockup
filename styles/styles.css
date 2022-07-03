@@ -1,0 +1,382 @@
+:root {
+  /* Font */
+  --font-family: 'Poppins', sans-serif;
+
+  /* Colors */
+  --main-light: #ffffff;
+  --main-dark: #000000;
+  --main-color: #8f95a5;
+
+  --secondary-color: #263238;
+  --accent-color: #939393;
+
+  --card-bg: #f5f5f5;
+  --counter-color: #2a3246;
+  --badge-bg: #eeeeee;
+  --badge-color: #546269;
+  --border-color: #c4c4c4;
+}
+
+/* Common */
+
+body {
+  width: 1400px;
+  margin: 0 auto;
+  font-family: var(--font-family);
+  color: var(--main-color);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 16px;
+ 
+}
+ul li{
+  list-style-type: none;
+}
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.link {
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.list {
+  list-style: none;
+}
+
+.button {
+  margin-left: 150px; 
+  border: none;
+  background-color: transparent;
+  color: inherit;
+
+  cursor: pointer;
+}
+
+.section {
+  display: flex;
+  background-color: var(--main-light);
+}
+.section-hero{
+   width: 630px; 
+}
+.section-title {
+ 
+  font-weight: 600;
+  font-size: 48px;
+  color: var(--main-dark);
+  line-height: 1.67;
+  text-align: center;
+}
+.section-pricing{
+  display: flex;
+}
+.accent {
+  color: var(--accent-color);
+}
+
+/* Header */
+
+.header {
+  display: flex;
+   padding-left: 130px; 
+  padding-top: 71px; 
+  background-color: var(--main-light);
+}
+
+.logo {
+  font-size: 36px;
+  color: var(--main-dark);
+
+  line-height: 1.5;
+}
+nav{
+  
+  padding-left: 250px; 
+}
+.nav-list {
+  display: flex;
+  padding-left: 0;
+}
+
+.nav-link {
+
+  padding-left: 50px;
+  font-size: 20px;
+  line-height: 1.5;
+
+  color: var(--secondary-color);
+  text-transform: capitalize;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: var(--accent-color);
+}
+
+.header-btn {
+  font-size: 24px;
+  line-height: 1.5;
+  text-transform: capitalize;
+
+  color: var(--secondary-color);
+  background-color: var(--main-light);
+
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+}
+
+.header-btn:hover,
+.header-btn:focus {
+  color: var(--main-light);
+  background-color: var(--secondary-color);
+}
+
+/* Hero */
+
+.hero-title {
+  padding-top: 125px; 
+ padding-left: 130px;
+  font-weight: 600;
+  font-size: 64px;
+  line-height: 1.25;
+
+  color: var(--main-dark);
+}
+
+.hero-description {
+ margin-top: 30px;
+  padding-left: 130px; 
+  font-size: 24px;
+  line-height: 1.5;
+
+  color: var(--main-color);
+}
+
+.hero-btn {
+  margin-left: 130px; 
+  margin-top: 40px; 
+  font-size: 36px;
+  line-height: 1.5;
+  color: var(--main-light);
+  border: 2px solid var(--secondary-color);
+  background: var(--secondary-color);
+  border-radius: 15px;
+  width: 438px;
+  height: 118px;
+}
+.hero-img{
+ 
+  padding-top:75px;
+ margin-left: 160px; 
+}
+/* .hero-btn:hover,
+.hero-btn:focus {
+  color: var(--secondary-color);
+  background: var(--main-light);
+} */
+
+/* Skills */
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 18px;
+  grid-row-gap: 20px;
+ padding-left: 130px;
+ 
+  
+
+}
+.skills-item {
+ 
+  background: var(--card-bg);
+  border-radius: 10px;
+}
+.card1 {
+ 
+  grid-area: 1 / 1 / 3 / 2;
+}
+.card2 {
+ 
+  grid-area: 1 / 2 / 2 / 3;
+}
+.card3 {
+  
+  grid-area: 1 / 3 / 2 / 4;
+}
+.card4 {
+  grid-area: 2 / 2 / 3 / 4;
+}
+.skills-title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 2.67;
+  color: var(--secondary-color);
+  padding-left: 40px;
+}
+
+.skills-text {
+  line-height: 1.5;
+  padding-left: 40px;
+}
+
+.skills-btn {
+ 
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+
+  color: var(--main-light);
+
+  border: 2px solid var(--secondary-color);
+  background: var(--secondary-color);
+  border-radius: 5px;
+}
+
+.skills-btn:hover,
+.skills-btn:focus,
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--secondary-color);
+
+  background-color: var(--main-light);
+}
+ .skills-img1{
+  padding-top: 35px;
+  padding-left: 22px;
+}
+.skills-img2{
+ padding-top: 0;
+ padding-right: 20px;
+}
+.skills-img3{
+  padding-right: 63px;
+}
+.skills-img4{
+
+}  
+.section-pricing{
+  padding-left: 150px;
+}
+.section-about{ 
+  display: flex;
+  padding-left: 130px;
+}
+ 
+
+.title-about{
+ 
+ margin-left: 40px;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 2.67;
+  color: var(--main-dark);
+}
+.text-about{
+  margin-left: 40px;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height:1.5;
+
+}
+.about{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+
+}
+.about-img{
+margin-left: 100px;
+padding-top: 100px;
+
+}
+.about-list{
+ 
+font-family:'Poppins';
+font-style:normal;
+font-weight:600;
+font-size:48px;
+line-height:80px;
+color:var(--counter-color)
+}
+.about-li{
+ 
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height:1.5;
+  color:var(--main-color)
+}
+.section-pricing{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.title-pricing{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 600;
+font-size: 30px;
+line-height: 1.6;
+color:var(--secondary-color)
+}
+.text-pricing{
+  width: 300px;
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 1.5;
+color:var(--main-color);
+padding-bottom: 20px;
+}
+.button-pricing{
+  width: 240px;
+  height: 45px;
+  border:none;
+  background:var(--badge-bg);
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height:1.5;
+color:var(--badge-color);
+margin-top: auto;
+
+}
+.span-pricing{
+  padding-right: 8px;
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 30px;
+line-height:1.5;
+color:var(--counter-color);
+}
+
+.img-pricing{
+/* - */
+}
+.pricing{
+/* display: flex;
+flex-direction: column; */
+  width: 400px;
+margin-right: 50px;
+
+  
+}
